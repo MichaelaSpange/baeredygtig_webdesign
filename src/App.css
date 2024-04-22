@@ -1,0 +1,649 @@
+/*-------------- Generelle regler -------------*/
+* {
+  margin: 0;
+  padding: 0;
+  color: #B0987C;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #594334;
+}
+
+/*------------- Styling af nav component --------------*/
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 23px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  background-color: #38261C;
+  padding-bottom: 3%;
+  border-radius: 0 0 90px 90px;
+  border-bottom: solid 1px #B0987C;
+}
+
+#logo_nav {
+  background-color: #38261C;
+}
+
+#logo_nav_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #38261C;
+}
+
+#logo_nav_container a {
+  background-color: #38261C;
+}
+
+nav a {
+  background-color: #38261C;
+}
+
+/*--------------- Styling af footer component --------------*/
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 23px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  background-color: #38261C;
+  border-radius: 90px 90px 0px 0px;
+  border: solid 1px #B0987C;
+  height: 700px;
+  margin-top: 10%;
+}
+
+.footer_overskrift {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.to_kolonner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.kolonne_right {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-left: 1%;
+  line-height: 40px;
+}
+
+.kolonne_left {
+  text-align: right;
+  width: 33%;
+  margin-right: 1%;
+  line-height: 40px;
+}
+
+.social_ikons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 40%;
+  align-self: center;
+}
+
+.some_ikon {
+  width: 50px;
+}
+
+.footer_bue {
+  border-radius: 90px 90px 0px 0px;
+  border-top: solid 1px #B0987C;
+}
+
+/*------------------- Styling af pages ------------------*/
+
+.hero_section {
+  margin: 3% 0 10% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------------------- Forside Page ---------------------*/
+
+.services_m_overskrift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.services_m_overskrift h2 {
+  font-size: 100px;
+  font-weight: 100;
+}
+
+.service_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+  height: 400px;
+  padding: 4%;
+}
+
+.service_div img {
+  width: 140px;
+}
+
+.service_div p {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  height: 20%;
+}
+
+.services_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.case_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  width: "100%";
+  background-size: cover;
+  background-repeat:no-repeat;
+  padding: 10% 0 10% 0;
+  margin-top: 10%;
+}
+
+.case_section h2 {
+  color: #38261C;
+  font-size: 100px;
+  font-weight: 100;
+  margin: -80px 0 40px 0;
+}
+
+.case_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.case_div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 20px;
+}
+
+.prisudregner_wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #38261C;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 30% 0 30%;
+  padding: 5%;
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+}
+
+.prisudregner_wrapper h4 {
+  margin-top: 4%;
+}
+
+.prisudregner_wrapper p {
+  font-size: 30px;
+}
+
+.pris_bobbel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  width: 30%;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #B0987C;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  margin: 5% 5% 0 0;
+}
+
+/* Tilpas udseendet af den checked checkbox */
+input[type="checkbox"]:checked {
+  background-color: #B0987C; /* Baggrundsfarve, når den er markeret */
+  border-color: #B0987C; /* Border farve, når den er markeret */
+}
+
+input[type="checkbox"]::before {
+  content: "✔"; /* Tegn checkmark-symbol */
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff; /* Farven på checkmark-symbolet */
+  visibility: hidden; /* Skjul checkmark-symbol som standard */
+}
+
+input[type="checkbox"]:checked::before {
+  visibility: visible; /* Vis checkmark-symbol, når checkbox er markeret */
+}
+
+.input_fields input {
+  background-color: #c5b7a8;
+  border: solid 1px #38261C;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.input_fields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20%;
+}
+
+#submit {
+  background-color: #B0987C;
+  color: #38261C;
+  padding: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.podcast_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 1200px;
+  background-size: cover;
+  background-repeat:no-repeat;
+  margin-top: 10%;
+  flex-wrap: wrap;
+}
+
+.podcast_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.podcast_div img {
+  margin: 0 0 130px 80px ;
+}
+
+.podcast_div h2 {
+  color: #38261C;
+  margin: 300px 0 30px 0;
+}
+
+.podcast_div p {
+  color: #38261C;
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  text-align: center;
+}
+
+.podcast_div button {
+  width: 30%;
+  margin-top: 50px;
+}
+
+.service_bobbel_midt {
+  background-color: #38261C;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
+}
+
+.omos {
+  display: flex;
+  justify-content: center;
+  margin: 15% 0 10% 0;
+  
+}
+
+.omos p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.service_bobbel_midt h3 {
+  line-height: 35px;
+}
+
+/*------------------ Services page ----------------------*/
+
+.service_bobbel {
+  background-color: #38261C;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
+  margin: 5% 0 0 10%;
+}
+
+.service_bobbel_right {
+  background-color: #38261C;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
+  margin: 5% 0 0 50%;
+}
+
+/*--------------------- Cases page -------------------*/
+
+.case_section_cases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1500px;
+}
+
+.case_section_cases h2 {
+  font-size: 100px;
+}
+
+.case_section_cases p {
+  color: #38261C;
+  margin-top: 5%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.case_section_cases h2 {
+  color: #38261C;
+  margin-bottom: 5%;
+}
+
+.case_img_wrapper {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+
+#mork_case_p {
+  color: #B0987C;
+}
+
+#moerk_case_h2 {
+  color: #B0987C;
+}
+
+/*---------------------- Om os page -----------------------*/
+
+#omos_hero {
+  margin-top: 0px;
+}
+
+.service_bobbel_midt p {
+  width: 75%;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+#mission{
+  font-size: 70px;
+}
+
+#Michaela img {
+  width: 60%;
+}
+
+#Nikoline img {
+  width: 60%;
+}
+
+#Emma img {
+  width: 60%;
+}
+
+#Jessica img {
+  width: 45%;
+}
+
+.moed_os h2 {
+  font-size: 50px;
+}
+
+.moed_os h3 {
+  width: 80%;
+}
+
+/*------------------------ Kontakt page --------------------*/
+
+#kontakt {
+  color: #38261C;
+}
+
+.kontakt_form_label {
+  color: #38261C;
+  display: block;
+  margin-top: 2%;
+}
+
+.kontakt_form_input {
+  background-color: #ece3da;
+  height: 30px;
+  width: 100%;
+  border: 1px solid #38261C;
+}
+
+#kontakt_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/*------------- Styling af tekst & knapper ---------------*/
+
+h1 {
+  font-size: 200px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 100px;
+  font-weight: 100;
+}
+
+li {
+  font-size: 20px;
+}
+
+button {
+  background-color: #38261C;
+  border: none;
+  height: 40px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 870px) {
+
+  .case_section {
+    width: 100%;
+    height: 600px;
+  }
+
+  .case_section h2 {
+  font-size: 70px;
+  margin-bottom: 60px;
+  }
+
+  .case_section div {
+    flex-direction: column;
+  }
+
+  .services_m_overskrift div {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .services_m_overskrift {
+    flex-direction: column;
+  }
+
+  .prisudregner_wrapper {
+   
+   width: 390px;
+   height: 390px;
+    margin: 40% 0 60% 0;
+   
+  }
+
+  .pris_bobbel {
+    width: 80%;
+  }
+
+  .services_checkbox_bobbel h2 {
+    font-size: 40px;
+  }
+
+  .services_checkbox_bobbel {
+    width: 90%;
+    margin: 60px 0 30px 0;
+
+  }
+
+  .services_m_box label {
+    font-size: 20px;
+    width: 100%;
+  }
+
+ .hide_on_mobile {
+  display: none;
+ }
+
+ .podcast_section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 900px;
+  justify-content: space-evenly;
+ }
+
+ .podcast_div img {
+  margin: 0;
+  width: 100px;
+ }
+
+ .podcast_div h2 {
+  margin: 0;
+ }
+
+ .podcast_div {
+  width: 80%;
+ }
+
+ .service_bobbel_midt {
+  height: 600px;
+  width: 600px;
+  margin-bottom: 30%;
+ }
+
+ .service_bobbel_midt h5 {
+  font-size: 60px;
+ }
+
+ .service_bobbel_midt h3 {
+  font-size: 18px;
+  margin-top: 10%;
+  width: 80%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+ }
+
+ .hero_section {
+  width: 100%;
+  height: auto;
+ }
+
+ .hero_section h1 {
+ font-size: 80px;
+ }
+
+ .service_bobbel {
+  width: 390px;
+  height: 390px;
+  margin: 20% 0% 20% 0%;
+ }
+
+ .service_bobbel_right {
+  width: 390px;
+  height: 390px;
+  margin: 20% 0% 20% 0%;
+ }
+
+}
+
+
+
